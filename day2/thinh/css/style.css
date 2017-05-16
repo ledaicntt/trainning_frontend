@@ -1,0 +1,108 @@
+/*RESET*/
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	font-size: 62.5%;
+	background: url(../images/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+/*ELEMENT
+-------------------------------------------*/
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/*HEADER
+===========================================*/
+#header {
+	width: 100%;
+	height: 90px;
+	background-color:#fff;
+}
+#logo {
+	width: 149px;
+	height: 66px;
+	background: url(../images/logo_.png) no-repeat;
+	text-indent:-999%;
+	margin: 12px 0;
+	float: left;
+}
+#logo:hover{
+	background: url(../images/logo.png);
+}
+
+#navigation{
+	/*position: absolute;*/
+	float: right;
+}
+#navigation li{
+	display: inline-block;
+}
+#navigation li a{
+	color: #a2a2a2;
+	font-size: 16px;
+	line-height: 90px;
+	padding-left: 20px;
+	text-transform: uppercase;
+}
+#navigation li a:hover{
+	color:#da3c2c;
+}
+#navigation.left-menu{
+	left:0;
+}
+#navigation.right-menu{
+	right:0;
+}
+
+/*CONTAINER
+=================================*/
+	/*Main content*/
+#sidebar,
+#main-content {
+	height: 400px;
+	float: left;
+	background: #fff;
+	padding: 15px;
+}
+
+#main-content {
+	width: 670px;
+	margin: 50px 10px 50px 0;
+	position: relative;
+}
+
+#sidebar {
+	width: 230px;
+	margin: 50px 0 50px 10px;
+}
+
+#main-content p, #sidebar p {
+	font-size: 1.4em
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	padding: 5px 0;
+	font-size: 12px;
+	width: 100%;
+	background-color: #FFF;
+}
