@@ -48,7 +48,7 @@ header:after {
     width: 149px;
     height: 66px;
     margin: 12px 0;
-    display: block;
+    display: inline-block;
     /*position: absolute;*/
 }
 
@@ -116,16 +116,14 @@ footer p {
         text-align: center;
     }
 
-    header #logo{
+    header #logo, header #menu{
         text-align: center;
         float: none;
     }
-
-    header #menu{
-        text-align: center;
-        /*width: 100%;*/
-        float: none;
+    .col-left, .col-right{
+        width: 100%;
+        height: auto;
+        margin: 15px 0 0;
     }
-
 }
 
