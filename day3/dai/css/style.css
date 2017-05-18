@@ -230,28 +230,43 @@ header {
 }
 
 .content_three .col-4 {
-    width: 100%;
+    padding: 10px 0 10px 80px;
+    position: relative;
 }
 
 .content_three .number {
     height: 3.75rem;
     line-height: 3.75rem;
     width: 3.75rem;
-    display: inline-block;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     color: #294356;
     font-weight: 700;
-    font-size: 1.25rem
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    box-shadow: 0px 0px 2px #d4d4d4;
 }
 
 .content_three .col-4 .description {
-    display: inline-block;
-}
-
-.content_three .col-4 > .description {
-
+    min-height: 60px;
 }
 
 /*end content_three*/
+
+/*about_company*/
+
+.about_company{
+    padding: 30px 0;
+    border-top: 1px solid #eff7f9;
+    border-bottom: 1px solid #eff7f9;
+}
+
+.about_us{
+    width: 42.8571%;
+}
+
+/*end about_company*/
