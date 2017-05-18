@@ -56,6 +56,10 @@ header:after {
     background: url('logo.png') no-repeat;
 }
 
+#menu_mobile{
+    display: none;
+}
+
 #menu {
     display: block;
     float: right;
@@ -124,6 +128,25 @@ footer p {
         width: 100%;
         height: auto;
         margin: 15px 0 0;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #menu>ul>li{
+        display: block;
+    }
+    #menu>ul>li>a {
+        line-height: 3rem;
+    }
+    #logo{
+        float: left;
+        width: 80%;
+    }
+
+    #menu_mobile{
+        float: right;
+        width: 20%;
+        display: inline-block;
     }
 }
 

@@ -39,12 +39,14 @@ header {
     background: -moz-linear-gradient(#30414f, #2a353e);
     background: linear-gradient(#30414f, #2a353e);
     text-align: center;
-    border-bottom: 2px solid #242729;
+    border-top: 1px solid #000;
 }
+
 .logo,
-.menu{
+.menu {
     width: 100%;
 }
+
 .logo {
     font-size: 1.25rem;
     color: #f5faff;
@@ -65,7 +67,7 @@ header {
 .menu > ul > li > a {
     color: #fff;
     line-height: 3.375rem;
-    padding:0 21px;
+    padding: 0 21px;
     font-weight: 700;
     font-size: 0.875rem;
 }
@@ -73,42 +75,183 @@ header {
 .menu > ul > li > a:hover {
     color: #ff7146;
 }
+
 /*end header*/
 
 /*welcome*/
-.welcome{
+.welcome {
     background: #fff;
     text-align: center;
-    border: 2px solid #daecf1;
+    border-top: 2px solid #242729;
 }
 
-.welcome_left p{
+.welcome_left {
+    padding: 34px 0 30px;
+}
+
+.welcome_right {
+    padding: 0 0 30px;
+}
+
+.welcome_left p {
     color: #798284;
     font-size: 1.25rem;
-    line-height: 6.125rem;
+    line-height: 2.125rem;
 }
-.welcome_left p span{
+
+.welcome_left p span {
     color: #2b3842;
     font-weight: 700;
 }
 
-.btn{
-    line-height: 6.125rem;
-    padding: 10px 20px;
+.btn {
+    line-height: 2.125rem;
+    padding: 8px 20px;
     margin: 0 8px;
-    border: 1px solid #ccc;
     border-radius: 20px;
     box-shadow: 0px 0px 2px #d4d4d4;
-    -moz-box-shadow:0px 0px 2px #d4d4d4;
+    -moz-box-shadow: 0px 0px 2px #d4d4d4;
     -webkit-box-shadow: 0px 2px 2px #d4d4d4;
+    font-size: 0.875rem;
+    font-weight: 700;
 }
+
+.btn_download {
+    background: -webkit-linear-gradient(#c9dd54, #89b10d);
+    background: -o-linear-gradient(#c9dd54, #89b10d);
+    background: -moz-linear-gradient(#c9dd54, #89b10d);
+    background: linear-gradient(#c9dd54, #89b10d);
+    color: #fffffe;
+    border: 1px solid #81aa08;
+}
+
+.btn_learn {
+    background: -webkit-linear-gradient(#ffffff, #ececec);
+    background: -o-linear-gradient(#ffffff, #ececec);
+    background: -moz-linear-gradient(#ffffff, #ececec);
+    background: linear-gradient(#ffffff, #ececec);
+    color: #727272;
+    border: 1px solid #d4d4d4;
+}
+
+.btn_view_project {
+    background: -webkit-linear-gradient(#5f95bb, #294a64);
+    background: -o-linear-gradient(#5f95bb, #294a64);
+    background: -moz-linear-gradient(#5f95bb, #294a64);
+    background: linear-gradient(#5f95bb, #294a64);
+    color: #fffffe;
+    border: 1px solid #1a68a3;
+}
+
 /*end welcome*/
 
 /*slider*/
-.slider{
+.slider {
     background: -webkit-linear-gradient(#e9f4f7, #f1f8fa);
     background: -o-linear-gradient(#e9f4f7, #f1f8fa);
     background: -moz-linear-gradient(#e9f4f7, #f1f8fa);
     background: linear-gradient(#e9f4f7, #f1f8fa);
+    border-top: 2px solid #daecf1;
 }
+
+.slider .wrapper {
+    display: flex;
+    flex-flow: column;
+}
+
+.slider .slider_img {
+    order: 1;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+}
+
+.slider .slider_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider .slider_description {
+    order: 2;
+}
+
+.slider_description h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #2d495e;
+    text-align: center;
+}
+
+.slider_description h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #75a6cb;
+    text-align: center;
+}
+
+.slider_description p {
+    font-size: 0.8125rem;
+    color: #2d495e;
+}
+
+.slider_description p a {
+    color: #3a6585;
+    text-decoration: underline;
+}
+
+.slider_description ul li {
+    font-weight: 700;
+    font-size: 0.8125rem;
+    color: #1c2f3d;
+    line-height: 1.5rem;
+    list-style: none;
+}
+
+.slider_description ul li i {
+    margin-right: 18px;
+}
+
+.slider_button {
+    padding: 30px 0 18px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #e9f4f7;
+}
+
 /*end slider*/
+
+/*content_three*/
+.content_three {
+    margin: 3px 0;
+    border-top: 2px solid #daecf1;
+    background: #e9f4f7;
+}
+
+.content_three .col-4 {
+    width: 100%;
+}
+
+.content_three .number {
+    height: 3.75rem;
+    line-height: 3.75rem;
+    width: 3.75rem;
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    color: #294356;
+    font-weight: 700;
+    font-size: 1.25rem
+}
+
+.content_three .col-4 .description {
+    display: inline-block;
+}
+
+.content_three .col-4 > .description {
+
+}
+
+/*end content_three*/
