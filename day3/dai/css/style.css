@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MYRIADPRO-BOLD.OTF");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MYRIADPRO-SEMIBOLD.OTF");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +25,10 @@ a {
 
 a:hover {
     color: #ff7146;
+}
+
+li {
+    list-style: none;
 }
 
 .clear:after {
@@ -50,7 +70,7 @@ header {
 .logo {
     font-size: 1.25rem;
     color: #f5faff;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 3.375rem;
     display: inline-block;
 }
@@ -79,6 +99,7 @@ header {
 /*end header*/
 
 /*welcome*/
+
 .welcome {
     background: #fff;
     text-align: center;
@@ -116,6 +137,14 @@ header {
     font-weight: 700;
 }
 
+.btn:hover {
+    background: -webkit-linear-gradient(#eeefff, #ececec);
+    background: -o-linear-gradient(#eeefff, #ececec);
+    background: -moz-linear-gradient(#eeefff, #ececec);
+    background: linear-gradient(#eeefff, #ececec);
+    border: 1px solid #d4d4d4;
+}
+
 .btn_download {
     background: -webkit-linear-gradient(#c9dd54, #89b10d);
     background: -o-linear-gradient(#c9dd54, #89b10d);
@@ -146,6 +175,7 @@ header {
 /*end welcome*/
 
 /*slider*/
+
 .slider {
     background: -webkit-linear-gradient(#e9f4f7, #f1f8fa);
     background: -o-linear-gradient(#e9f4f7, #f1f8fa);
@@ -205,7 +235,6 @@ header {
     font-size: 0.8125rem;
     color: #1c2f3d;
     line-height: 1.5rem;
-    list-style: none;
 }
 
 .slider_description ul li i {
@@ -223,6 +252,7 @@ header {
 /*end slider*/
 
 /*content_three*/
+
 .content_three {
     margin: 3px 0;
     border-top: 2px solid #daecf1;
@@ -247,7 +277,7 @@ header {
     position: absolute;
     left: 0;
     top: 50%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     box-shadow: 0px 0px 2px #d4d4d4;
 }
 
@@ -259,14 +289,119 @@ header {
 
 /*about_company*/
 
-.about_company{
+.about_company {
     padding: 30px 0;
     border-top: 1px solid #eff7f9;
-    border-bottom: 1px solid #eff7f9;
+    border-bottom: 1px solid #dcedf2;
 }
 
-.about_us{
-    width: 42.8571%;
+.about_us h3, .features h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #294356;
+}
+
+.about1, .about2 {
+    font-family: Arial, sans-serif;
+    color: #586369;
+    font-size: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.about2 {
+    text-indent: 20px;
+}
+
+.about_more {
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+.feature {
+    position: relative;
+}
+
+.feature > div {
+    padding: 10px 0;
+}
+
+.feature h4 {
+    font-size: 1rem;
+    color: #395c77;
+}
+
+.feature_img {
+    position: absolute;
+    left: 0;
+}
+
+.feature_text {
+    padding-left: 60px;
+    min-height: 44px;
 }
 
 /*end about_company*/
+
+/*footer*/
+.footer_p1 {
+    background: -webkit-linear-gradient(#30414f, #2b3740);
+    background: -o-linear-gradient(#30414f, #2b3740);
+    background: -moz-linear-gradient(#30414f, #2b3740);
+    background: linear-gradient(#30414f, #2b3740);
+    border-bottom: 1px solid #151b20;
+}
+
+.wrapper .col-3 h3 {
+    padding: 20px 0 5px;
+    color: #e3f7ff;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.wrapper .col-3 > ul > li {
+    text-align: center;
+}
+
+.wrapper .col-3 > ul > li > a {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: #869da7;
+}
+
+.wrapper .col-3 > ul > li > a:hover {
+    color: #ff7146;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social li a {
+    display: inline-block;
+    padding: 10px 7px;
+}
+
+.footer_p2 {
+    background: -webkit-linear-gradient(#161c21, #161b20);
+    background: -o-linear-gradient(#161c21, #161b20);
+    background: -moz-linear-gradient(#161c21, #161b20);
+    background: linear-gradient(#161c21, #161b20);
+    border-top: 1px solid #2b3035;
+    border-bottom: 1px solid #2a353e;
+    font-family: Arial, sans-serif;
+    color: #76939c;
+    text-align: center;
+}
+
+.footer_p2 .policy a {
+    text-decoration: underline;
+    color: #76939c;
+    line-height: 40px;
+}
+
+.copyright p{
+    line-height: 40px;
+}
+/*end footer*/
