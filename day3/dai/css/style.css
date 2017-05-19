@@ -54,9 +54,6 @@ body {
 /*header*/
 
 header {
-    background: -webkit-linear-gradient(#30414f, #2a353e);
-    background: -o-linear-gradient(#30414f, #2a353e);
-    background: -moz-linear-gradient(#30414f, #2a353e);
     background: linear-gradient(#30414f, #2a353e);
     text-align: center;
     border-top: 1px solid #000;
@@ -70,7 +67,7 @@ header {
 .logo {
     font-size: 1.25rem;
     color: #f5faff;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 3.375rem;
     display: inline-block;
 }
@@ -88,7 +85,7 @@ header {
     color: #fff;
     line-height: 3.375rem;
     padding: 0 21px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.875rem;
 }
 
@@ -122,7 +119,7 @@ header {
 
 .welcome_left p span {
     color: #2b3842;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .btn {
@@ -130,43 +127,29 @@ header {
     padding: 8px 20px;
     margin: 0 8px;
     border-radius: 20px;
-    box-shadow: 0px 0px 2px #d4d4d4;
-    -moz-box-shadow: 0px 0px 2px #d4d4d4;
-    -webkit-box-shadow: 0px 2px 2px #d4d4d4;
+    box-shadow: 0px 2px 2px #d4d4d4;
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .btn:hover {
-    background: -webkit-linear-gradient(#eeefff, #ececec);
-    background: -o-linear-gradient(#eeefff, #ececec);
-    background: -moz-linear-gradient(#eeefff, #ececec);
     background: linear-gradient(#eeefff, #ececec);
     border: 1px solid #d4d4d4;
 }
 
 .btn_download {
-    background: -webkit-linear-gradient(#c9dd54, #89b10d);
-    background: -o-linear-gradient(#c9dd54, #89b10d);
-    background: -moz-linear-gradient(#c9dd54, #89b10d);
     background: linear-gradient(#c9dd54, #89b10d);
     color: #fffffe;
     border: 1px solid #81aa08;
 }
 
 .btn_learn {
-    background: -webkit-linear-gradient(#ffffff, #ececec);
-    background: -o-linear-gradient(#ffffff, #ececec);
-    background: -moz-linear-gradient(#ffffff, #ececec);
     background: linear-gradient(#ffffff, #ececec);
     color: #727272;
     border: 1px solid #d4d4d4;
 }
 
 .btn_view_project {
-    background: -webkit-linear-gradient(#5f95bb, #294a64);
-    background: -o-linear-gradient(#5f95bb, #294a64);
-    background: -moz-linear-gradient(#5f95bb, #294a64);
     background: linear-gradient(#5f95bb, #294a64);
     color: #fffffe;
     border: 1px solid #1a68a3;
@@ -177,9 +160,6 @@ header {
 /*slider*/
 
 .slider {
-    background: -webkit-linear-gradient(#e9f4f7, #f1f8fa);
-    background: -o-linear-gradient(#e9f4f7, #f1f8fa);
-    background: -moz-linear-gradient(#e9f4f7, #f1f8fa);
     background: linear-gradient(#e9f4f7, #f1f8fa);
     border-top: 2px solid #daecf1;
 }
@@ -206,7 +186,7 @@ header {
 
 .slider_description h3 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: capitalize;
     color: #2d495e;
     text-align: center;
@@ -214,7 +194,7 @@ header {
 
 .slider_description h4 {
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: capitalize;
     color: #75a6cb;
     text-align: center;
@@ -223,6 +203,7 @@ header {
 .slider_description p {
     font-size: 0.8125rem;
     color: #2d495e;
+    font-family: Arial, sans-serif;
 }
 
 .slider_description p a {
@@ -231,7 +212,8 @@ header {
 }
 
 .slider_description ul li {
-    font-weight: 700;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
     font-size: 0.8125rem;
     color: #1c2f3d;
     line-height: 1.5rem;
@@ -265,39 +247,50 @@ header {
 }
 
 .content_three .number {
-    height: 3.75rem;
-    line-height: 3.75rem;
-    width: 3.75rem;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     color: #294356;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1.25rem;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    box-shadow: 0px 0px 2px #d4d4d4;
+    box-shadow: 0px 2px 2px #d4d4d4;
 }
 
 .content_three .col-4 .description {
     min-height: 60px;
 }
+.content_three .col-4 .description h4{
+    font-weight: bold;
+    font-size: 1.0625rem;
+    color: #294356;
 
+}
+.content_three .col-4 .description p{
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #636d75;
+}
 /*end content_three*/
 
 /*about_company*/
 
 .about_company {
-    padding: 30px 0;
+    padding: 10px 0;
     border-top: 1px solid #eff7f9;
     border-bottom: 1px solid #dcedf2;
 }
 
 .about_us h3, .features h3 {
+    padding: 20px 0;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center;
     color: #294356;
 }
@@ -315,8 +308,15 @@ header {
 
 .about_more {
     text-align: center;
-    padding: 10px 0 30px;
+    padding: 10px 0;
 }
+
+.btn_learn1 {
+    background: linear-gradient(#f9fdff, #f6fafa);
+    color: #727272;
+    border: 1px solid #d4d4d4;
+}
+
 
 .feature {
     position: relative;
@@ -337,6 +337,9 @@ header {
 }
 
 .feature_text {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #4b5258;
     padding-left: 60px;
     min-height: 44px;
 }
@@ -345,9 +348,6 @@ header {
 
 /*footer*/
 .footer_p1 {
-    background: -webkit-linear-gradient(#30414f, #2b3740);
-    background: -o-linear-gradient(#30414f, #2b3740);
-    background: -moz-linear-gradient(#30414f, #2b3740);
     background: linear-gradient(#30414f, #2b3740);
     border-bottom: 1px solid #151b20;
 }
@@ -355,7 +355,7 @@ header {
 .wrapper .col-3 h3 {
     padding: 20px 0 5px;
     color: #e3f7ff;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: capitalize;
     text-align: center;
 }
@@ -367,6 +367,7 @@ header {
 .wrapper .col-3 > ul > li > a {
     line-height: 1.5;
     font-family: Arial, sans-serif;
+    font-size: 0.75rem;
     color: #869da7;
 }
 
@@ -383,15 +384,20 @@ header {
     padding: 10px 7px;
 }
 
+
+.social li a img{
+    height: 23px;
+    width: 23px;
+}
+
+
 .footer_p2 {
-    background: -webkit-linear-gradient(#161c21, #161b20);
-    background: -o-linear-gradient(#161c21, #161b20);
-    background: -moz-linear-gradient(#161c21, #161b20);
     background: linear-gradient(#161c21, #161b20);
     border-top: 1px solid #2b3035;
     border-bottom: 1px solid #2a353e;
     font-family: Arial, sans-serif;
     color: #76939c;
+    font-size: 0.6875rem;
     text-align: center;
 }
 
