@@ -3,11 +3,13 @@
     src: url("../fonts/MYRIADPRO-BOLD.OTF");
     font-weight: bold;
 }
+
 @font-face {
     font-family: "Myriad Pro";
     src: url("../fonts/MYRIADPRO-SEMIBOLD.OTF");
     font-weight: 600;
 }
+
 @font-face {
     font-family: "Myriad Pro";
     src: url("../fonts/MYRIADPRO-REGULAR.OTF");
@@ -17,6 +19,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -46,7 +49,7 @@ body {
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1050px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -84,9 +87,13 @@ header {
 .menu > ul > li > a {
     color: #fff;
     line-height: 3.375rem;
-    padding: 0 21px;
+    padding: 0 10px 0 0;
     font-weight: 600;
     font-size: 0.875rem;
+}
+
+.menu > ul > li:last-child > a {
+    padding: 0;
 }
 
 .menu > ul > li > a:hover {
@@ -266,17 +273,20 @@ header {
 .content_three .col-4 .description {
     min-height: 60px;
 }
-.content_three .col-4 .description h4{
+
+.content_three .col-4 .description h4 {
     font-weight: bold;
     font-size: 1.0625rem;
     color: #294356;
 
 }
-.content_three .col-4 .description p{
+
+.content_three .col-4 .description p {
     font-family: Arial, sans-serif;
     font-size: 0.75rem;
     color: #636d75;
 }
+
 /*end content_three*/
 
 /*about_company*/
@@ -316,7 +326,6 @@ header {
     color: #727272;
     border: 1px solid #d4d4d4;
 }
-
 
 .feature {
     position: relative;
@@ -384,12 +393,10 @@ header {
     padding: 10px 7px;
 }
 
-
-.social li a img{
+.social li a img {
     height: 23px;
     width: 23px;
 }
-
 
 .footer_p2 {
     background: linear-gradient(#161c21, #161b20);
@@ -407,7 +414,215 @@ header {
     line-height: 40px;
 }
 
-.copyright p{
+.copyright p {
     line-height: 40px;
 }
+
 /*end footer*/
+
+/*response iPad*/
+
+@media screen and (min-width: 768px) {
+
+    /*header*/
+    .logo {
+        width: 30%;
+        float: left;
+        text-align: left;
+    }
+
+    .menu {
+        width: 70%;
+        float: right;
+        text-align: right;
+    }
+
+    .menu > ul > li > a {
+        padding: 0 0 0 20px;
+    }
+
+    /*end header*/
+    /*slider*/
+    .slider .wrapper {
+        display: block;
+    }
+
+    .slider .slider_description,
+    .slider .slider_img {
+        width: 50%;
+        float: left;
+        padding: 30px 10px;
+    }
+
+    .slider_description h3,
+    .slider_description h4 {
+        text-align: left;
+    }
+
+    .slider_button {
+        padding: 20px 0 0;
+    }
+
+    /*end slider*/
+    /*content_three*/
+    .content_three {
+        padding: 25px 0;
+    }
+
+    .content_three .col-4 {
+        width: 33.3333%;
+        float: left;
+        padding: 0 10px 0 80px;
+    }
+
+    .content_three .col-4 .description p {
+        text-align: justify;
+    }
+
+    /*end content_three*/
+    /*about_company*/
+    .about_us {
+        padding: 0 20%;
+    }
+
+    .feature {
+        width: 50%;
+        float: left;
+        padding: 10px;
+    }
+
+    .feature_img {
+        position: absolute;
+        left: 10px;
+    }
+
+    /*end about_company*/
+    /*footer*/
+    .footer_p1 {
+        padding: 15px 0 10px;
+    }
+
+    .footer_p1 .col-3 {
+        width: 25%;
+        float: left;
+    }
+
+    .footer_p1 .col-3 h3,
+    .footer_p1 .col-3 > ul > li {
+        text-align: left;
+    }
+
+    .footer_p1 .col-3 h3 {
+        padding: 5px 0;
+    }
+
+    .footer_p2 {
+        padding: 8px 0;
+    }
+
+    .footer_p2 .policy {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .footer_p2 .policy a{
+        line-height: 1rem;
+    }
+
+    .copyright p {
+        line-height: 1rem;
+        text-align: right;
+    }
+
+    /*end footer*/
+
+}
+
+/*end response iPad*/
+
+@media screen and (min-width: 1023px) {
+    /*header*/
+    .menu > ul > li > a {
+        padding: 0 0 0 40px;
+    }
+
+    /*end header*/
+    /*welcome*/
+    .welcome_left {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+
+    .welcome_right {
+        width: 50%;
+        float: left;
+        text-align: right;
+        padding: 34px 0 30px;
+    }
+
+    /*end welcome*/
+    /*slider*/
+    .slider .slider_description {
+        width: 40%;
+    }
+
+    .slider .slider_img {
+        width: 60%;
+    }
+
+    /*end slider*/
+    /*about_company*/
+    .about_us {
+        width: 37.5%;
+        float: left;
+        text-align: left;
+        padding: 10px;
+        margin-left: -10px;
+    }
+
+    .about_us h3, .features h3,
+    .about1, .about2, .about_more {
+        text-align: left;
+    }
+
+    .btn_learn1 {
+        margin: 0;
+    }
+
+    .features {
+        width: 62.5%;
+        float: left;
+        padding: 10px 20px;
+        margin-right: -20px;
+    }
+
+    .feature {
+        padding: 0;
+    }
+
+    /*end about_company*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
