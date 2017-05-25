@@ -49,7 +49,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1050px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -291,7 +291,6 @@ header {
 /*about_company*/
 
 .about_company {
-    padding: 10px 0;
     border-top: 1px solid #eff7f9;
     border-bottom: 1px solid #dcedf2;
 }
@@ -586,8 +585,8 @@ header {
         width: 37.5%;
         float: left;
         text-align: left;
-        padding: 10px;
-        margin-left: -10px;
+        padding: 10px 40px 10px 0 ;
+        border-right: 1px solid #eff7f9;
     }
 
     .about_us h3, .features h3,
@@ -602,13 +601,21 @@ header {
     .features {
         width: 62.5%;
         float: left;
-        padding: 10px 20px;
-        margin-right: -20px;
+        padding: 10px 0;
     }
 
-    .feature {
-        padding: 0;
+    .features h3{
+        padding-left: 40px;
     }
+
+    .feature{
+        padding: 0 0 0 40px;
+    }
+
+    .feature .feature_img{
+        left: 40px;
+    }
+
 
     /*end about_company*/
 }
