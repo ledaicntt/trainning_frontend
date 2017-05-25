@@ -99,7 +99,6 @@ header {
 .menu > ul > li > a:hover {
     color: #ff7146;
 }
-
 /*end header*/
 
 /*welcome*/
@@ -183,7 +182,7 @@ header {
 }
 
 .slider .slider_img img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -460,7 +459,8 @@ header {
     }
 
     .slider_button {
-        padding: 20px 0 0;
+        padding: 30px 0 0;
+        text-align: left;
     }
 
     /*end slider*/
@@ -472,7 +472,11 @@ header {
     .content_three .col-4 {
         width: 33.3333%;
         float: left;
-        padding: 0 10px 0 80px;
+        padding: 0 50px 0 80px;
+    }
+
+    .content_three .col-4:last-child {
+        margin-right: -30px;
     }
 
     .content_three .col-4 .description p {
@@ -499,7 +503,7 @@ header {
     /*end about_company*/
     /*footer*/
     .footer_p1 {
-        padding: 15px 0 10px;
+        padding: 10px 0 30px;
     }
 
     .footer_p1 .col-3 {
@@ -513,11 +517,11 @@ header {
     }
 
     .footer_p1 .col-3 h3 {
-        padding: 5px 0;
+        padding: 20px 0;
     }
 
     .footer_p2 {
-        padding: 8px 0;
+        padding: 20px 0;
     }
 
     .footer_p2 .policy {
@@ -565,11 +569,15 @@ header {
     /*end welcome*/
     /*slider*/
     .slider .slider_description {
-        width: 40%;
+        width: 37.5%;
     }
 
     .slider .slider_img {
-        width: 60%;
+        width: 62.5%;
+    }
+
+    .slider_button {
+        padding: 50px 0 0;
     }
 
     /*end slider*/
