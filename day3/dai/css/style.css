@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    line-height: 1.5;
+}
+
 a:hover {
     color: #ff7146;
 }
@@ -85,7 +89,7 @@ header {
 }
 
 .menu > ul > li > a {
-    color: #fff;
+    color: #e0edf0;
     line-height: 3.375rem;
     padding: 0 10px 0 0;
     font-weight: 600;
@@ -99,6 +103,11 @@ header {
 .menu > ul > li > a:hover {
     color: #ff7146;
 }
+
+.menu > ul > li > a.acive {
+    color: #fff;
+}
+
 /*end header*/
 
 /*welcome*/
@@ -234,7 +243,6 @@ header {
     display: inline-block;
     text-align: center;
     width: 100%;
-    border-bottom: 1px solid #e9f4f7;
 }
 
 /*end slider*/
@@ -263,9 +271,10 @@ header {
     font-weight: bold;
     font-size: 1.25rem;
     position: absolute;
+    top: 0;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
     box-shadow: 0px 2px 2px #d4d4d4;
 }
 
@@ -277,7 +286,8 @@ header {
     font-weight: bold;
     font-size: 1.0625rem;
     color: #294356;
-
+    padding-bottom: 10px;
+    line-height: 1;
 }
 
 .content_three .col-4 .description p {
@@ -293,14 +303,28 @@ header {
 .about_company {
     border-top: 1px solid #eff7f9;
     border-bottom: 1px solid #dcedf2;
+    background: #fff;
+}
+
+.about_us {
 }
 
 .about_us h3, .features h3 {
     padding: 20px 0;
     font-size: 1.5rem;
-    font-weight: bold;
     text-align: center;
     color: #294356;
+}
+
+.about_us h3 {
+    font-weight: bold;
+}
+.features{
+    border-top: 1px solid #eff7f9;
+}
+
+.features h3 {
+    font-weight: 600;
 }
 
 .about1, .about2 {
@@ -308,6 +332,7 @@ header {
     color: #586369;
     font-size: 0.75rem;
     padding-bottom: 0.75rem;
+    line-height: 1.5;
 }
 
 .about2 {
@@ -316,7 +341,7 @@ header {
 
 .about_more {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 20px;
 }
 
 .btn_learn1 {
@@ -336,6 +361,7 @@ header {
 .feature h4 {
     font-size: 1rem;
     color: #395c77;
+    font-weight: 600;
 }
 
 .feature_img {
@@ -349,6 +375,7 @@ header {
     color: #4b5258;
     padding-left: 60px;
     min-height: 44px;
+    line-height: 1.5;
 }
 
 /*end about_company*/
@@ -359,7 +386,8 @@ header {
     border-bottom: 1px solid #151b20;
 }
 
-.wrapper .col-3 h3 {
+.wrapper .col-3 h3,
+.wrapper .col-4 h3 {
     padding: 20px 0 5px;
     color: #e3f7ff;
     font-weight: bold;
@@ -367,18 +395,21 @@ header {
     text-align: center;
 }
 
-.wrapper .col-3 > ul > li {
+.wrapper .col-3 > ul > li,
+.wrapper .col-4 > ul > li {
     text-align: center;
 }
 
-.wrapper .col-3 > ul > li > a {
+.wrapper .col-3 > ul > li > a,
+.wrapper .col-4 > ul > li > a {
     line-height: 1.5;
     font-family: Arial, sans-serif;
     font-size: 0.75rem;
     color: #869da7;
 }
 
-.wrapper .col-3 > ul > li > a:hover {
+.wrapper .col-3 > ul > li > a:hover,
+.wrapper .col-4 > ul > li > a:hover {
     color: #ff7146;
 }
 
@@ -388,7 +419,7 @@ header {
 
 .social li a {
     display: inline-block;
-    padding: 10px 7px;
+    padding: 10px 5px;
 }
 
 .social li a img {
@@ -448,8 +479,17 @@ header {
     .slider .slider_description,
     .slider .slider_img {
         width: 50%;
-        float: left;
         padding: 30px 10px;
+    }
+
+    .slider .slider_description {
+        margin-left: -10px;
+        float: left;
+    }
+
+    .slider .slider_img {
+        margin-right: -10px;
+        float: right;
     }
 
     .slider_description h3,
@@ -462,6 +502,10 @@ header {
         text-align: left;
     }
 
+    .slider_button .btn:first-child {
+        margin-left: 0;
+    }
+
     /*end slider*/
     /*content_three*/
     .content_three {
@@ -471,7 +515,11 @@ header {
     .content_three .col-4 {
         width: 33.3333%;
         float: left;
-        padding: 0 50px 0 80px;
+        padding: 0 30px;
+    }
+
+    .content_three .col-4 .row {
+        padding: 0 0 0 50px;
     }
 
     .content_three .col-4:last-child {
@@ -479,7 +527,7 @@ header {
     }
 
     .content_three .col-4 .description p {
-        text-align: justify;
+        /*text-align: justify;*/
     }
 
     /*end content_three*/
@@ -491,32 +539,70 @@ header {
     .feature {
         width: 50%;
         float: left;
-        padding: 10px;
+        padding: 10px 20px;
     }
 
     .feature_img {
         position: absolute;
-        left: 10px;
+        left: 20px;
     }
 
     /*end about_company*/
     /*footer*/
     .footer_p1 {
-        padding: 10px 0 30px;
+        padding: 30px 0;
+    }
+
+    .footer_p1 .col-9 {
+        width: 75%;
+        float: left;
+        padding: 0 20px;
+        margin-left: -20px;
+        position: relative;
+    }
+
+    .footer_p1 .col-9:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border-left: 1px solid #243039;
+        border-right: 1px solid #364855;
     }
 
     .footer_p1 .col-3 {
         width: 25%;
         float: left;
+        padding: 0 0 0 40px;
+        margin-right: -20px;
+    }
+
+    .footer_p1 .col-4 {
+        width: 33.3333%;
+        float: left;
     }
 
     .footer_p1 .col-3 h3,
-    .footer_p1 .col-3 > ul > li {
+    .footer_p1 .col-4 h3,
+    .footer_p1 .col-3 > ul > li,
+    .footer_p1 .col-4 > ul > li {
         text-align: left;
     }
 
-    .footer_p1 .col-3 h3 {
-        padding: 20px 0;
+    .footer_p1 .col-3 h3,
+    .footer_p1 .col-4 h3 {
+        padding: 0 0 20px;
+        line-height: 1;
+    }
+
+    .footer_p1 .social {
+        padding: 10px 0;
+    }
+
+    .footer_p1 .social li:first-child a {
+        padding-left: 0;
     }
 
     .footer_p2 {
@@ -529,7 +615,7 @@ header {
         text-align: left;
     }
 
-    .footer_p2 .policy a{
+    .footer_p2 .policy a {
         line-height: 1rem;
     }
 
@@ -546,8 +632,9 @@ header {
 
 @media screen and (min-width: 1023px) {
     /*header*/
-    .menu > ul > li > a {
-        padding: 0 0 0 40px;
+    .menu > ul > li > a,
+    .menu > ul > li:last-child > a {
+        padding: 0 0 1px 40px;
     }
 
     /*end header*/
@@ -565,6 +652,10 @@ header {
         padding: 34px 0 30px;
     }
 
+    .welcome_right .btn_learn {
+        margin-right: 0;
+    }
+
     /*end welcome*/
     /*slider*/
     .slider .slider_description {
@@ -576,17 +667,16 @@ header {
     }
 
     .slider_button {
-        padding: 50px 0 0;
+        padding: 40px 0 0;
     }
 
     /*end slider*/
     /*about_company*/
     .about_us {
-        width: 37.5%;
+        width: 43.75%;
         float: left;
         text-align: left;
-        padding: 10px 40px 10px 0 ;
-        border-right: 1px solid #eff7f9;
+        padding: 10px 40px 10px 0;
     }
 
     .about_us h3, .features h3,
@@ -599,23 +689,24 @@ header {
     }
 
     .features {
-        width: 62.5%;
+        width: 56.25%;
         float: left;
         padding: 10px 0;
+        border-top: none;
+        border-left: 1px solid #eff7f9;
     }
 
-    .features h3{
+    .features h3 {
         padding-left: 40px;
     }
 
-    .feature{
-        padding: 0 0 0 40px;
+    .feature {
+        padding: 0 0 10px 40px;
     }
 
-    .feature .feature_img{
+    .feature .feature_img {
         left: 40px;
     }
-
 
     /*end about_company*/
 }
