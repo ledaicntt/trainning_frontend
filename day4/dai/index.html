@@ -5,82 +5,121 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--style css-->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--js-->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
     <title>Document</title>
 </head>
 <body>
-<div class="container">
-    <header>
+<header>
+    <div class="container">
         <div class="row">
-            <div class="text-center">
-                <a href="#" class="logo">Justeme</a>
+            <div class="">
+                <div class="logo">
+                    <a href="#" class="logo-text">Justeme</a>
+
+                    <button href="#" class="btn-menus">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
             </div>
             <div class="">
                 <div class="menu">
-                    <ul>
-                        <li><a href="#" class="acive">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contacts</a></li>
+                    <ul class="menu-items">
+                        <li class="menu-item"><a href="#" class="acive">Home</a></li>
+                        <li class="menu-item"><a href="">About us</a></li>
+                        <li class="menu-item sub1-menu-items">
+                            <a href="">Services</a>
+                            <ul class="">
+                                <li>
+                                    <a href="#">Domain</a>
+                                </li>
+                                <li class="sub2-menu-items">
+                                    <a href="#">Hosting</a>
+                                    <ul>
+                                        <li><a href="$">Package 01</a></li>
+                                        <li><a href="$">Package 02</a></li>
+                                        <li><a href="$">Package 03</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="$">Cloud Server</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="menu-item"><a href="">Blog</a></li>
+                        <li class="menu-item"><a href="">Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <section class="welcome">
+
+<section class="welcome">
+    <div class="container">
         <div class="row">
             <div class="">
-                <div class="welcome_left">
+                <div class="welcome-text">
                     <p>Welcome to <span>Justeme</span> - PSD Template</p>
                 </div>
             </div>
             <div class="">
-                <div class="welcome_right">
-                    <a href="#" class="btn btn_download">Download</a>
-                    <a href="#" class="btn btn_learn">Learn More</a>
+                <div class="welcome-button">
+                    <a href="#" class="btn btn-download">Download</a>
+                    <a href="#" class="btn btn-learn">Learn More</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="slider">
+<section class="slider">
+    <div class="container">
         <div class="row">
             <div class="">
-                <div class="slider_description">
-                    <h3>Lorem ipsum dolor sit</h3>
-                    <h4>Consectetur Adipiscing</h4>
-                    <br>
-                    <p>Cras erat diam, vestibulum vel viverra et, viverra nec nunc. In at sapien non <strong>lectus
-                        vulputate pretium</strong> at id sapien. Suspendisse potenti.</p>
-                    <br>
-                    <p>Pellentesque eu <a href="#">augue quis</a> leo imperdiet rutrum.</p>
-                    <br>
-                    <ul>
-                        <li><i>&bull;</i>Vestibulum vel viverra pretium at sapien</li>
-                        <li><i>&bull;</i>Vulputate pretium potenti</li>
-                        <li><i>&bull;</i>Ut laoreet aliquet viverra</li>
-                    </ul>
-                    <div class="slider_button">
-                        <a href="#" class="btn btn_download">Download</a>
-                        <a href="#" class="btn btn_view_project">View Our Projects</a>
+                <div class="slider-description">
+                    <h3 class="title slider-description-title">Lorem ipsum dolor sit</h3>
+                    <h4 class="title slider-description-subtitle">Consectetur Adipiscing</h4>
+                    <div class="slider-description-content">
+                        <p>Cras erat diam, vestibulum vel viverra et, viverra nec nunc. In at sapien non <strong>lectus
+                            vulputate pretium</strong> at id sapien. Suspendisse potenti.</p>
+                        <p>Pellentesque eu <a href="#">augue quis</a> leo imperdiet rutrum.</p>
+                        <ul>
+                            <li><i>&bull;</i>Vestibulum vel viverra pretium at sapien</li>
+                            <li><i>&bull;</i>Vulputate pretium potenti</li>
+                            <li><i>&bull;</i>Ut laoreet aliquet viverra</li>
+                        </ul>
+                    </div>
+                    <div class="slider-button">
+                        <a href="#" class="btn btn-download">Download</a>
+                        <a href="#" class="btn btn-view-project">View Our Projects</a>
                     </div>
                 </div>
             </div>
             <div class="">
-                <div class="slider_img">
-                    <img src="images/slider_01.png" alt="slider_01">
+                <div class="slider-img">
+                    <img src="./images/slider_01.png" alt="slider-01">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="content_three">
+<section class="content_three">
+    <div class="container">
         <div class="row">
             <div class="">
-                <div class="contet_three_child">
+                <div class="content_three_child">
                     <div class="number">1</div>
                     <div class="description">
                         <h4>Lorem ipsum dolor</h4>
@@ -91,7 +130,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="contet_three_child">
+                <div class="content_three_child">
                     <div class="number">2</div>
                     <div class="description">
                         <h4>Lorem ipsum dolor</h4>
@@ -102,7 +141,7 @@
                 </div>
             </div>
             <div class="">
-                <div class="contet_three_child">
+                <div class="content_three_child">
                     <div class="number">3</div>
                     <div class="description">
                         <h4>Lorem ipsum dolor</h4>
@@ -113,8 +152,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="about_company">
+    </div>
+</section>
+<section class="about_company">
+    <div class="container">
         <div class="row">
             <div class="">
                 <div class="about_us">
@@ -133,7 +174,7 @@
                         Nam at sapien erat.
                     </div>
                     <div class="about_more">
-                        <a href="#" class="btn btn_learn1">Learn More</a>
+                        <a href="#" class="btn btn-learn1">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -180,9 +221,10 @@
                 </div>
             </div>
         </div>
-
-    </section>
-    <footer>
+    </div>
+</section>
+<footer>
+    <div class="container">
         <div class="row">
             <div class="footer_p1">
                 <div class="">
@@ -198,7 +240,7 @@
                             <li><a href="#">Lorem ipsum dolor </a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="">
                         <h3>Sit Amet</h3>
                         <ul>
                             <li><a href="#">Lorem Ipsum </a></li>
@@ -207,7 +249,7 @@
                             <li><a href="#">Lorem ipsum dolor sit</a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="">
                         <h3>Consectetur & Adipiscing</h3>
                         <ul>
                             <li><a href="#">Lorem Ipsum </a></li>
@@ -245,7 +287,18 @@
                 </div>
             </div>
         </div>
-    </footer>
-</div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function () {
+        $('.btn-menus').click(function () {
+            if ($('.menu').hasClass('show')) {
+                $('.menu').removeClass('show');
+            } else {
+                $('.menu').addClass('show');
+            }
+        });
+    });
+</script>
 </body>
 </html>
