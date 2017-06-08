@@ -26,8 +26,13 @@ li {
   list-style: none;
 }
 
-p {
-  line-height: 1.5;
+* {
+  font-family: "Myriad Pro", Arial, sans-serif;
+  padding: 0;
+}
+
+p, p *, strong {
+  font-family: Arial, sans-serif;
 }
 
 .hidden {
@@ -43,12 +48,13 @@ header .logo .logo-text {
   line-height: 3.375rem;
   font-weight: 600;
   display: inline-block;
+  font-family: "Myriad Pro", Arial, sans-serif;
 }
 header .btn-menus {
   background: #232323;
   border: none;
   padding: 5px;
-  margin: 12px 12px 0;
+  margin: 12px 5px 0;
   float: right;
 }
 header .btn-menus .icon-bar {
@@ -71,6 +77,9 @@ header .menu {
   header .menu {
     display: block;
   }
+}
+header .menu a {
+  font-family: "Myriad Pro", Arial, sans-serif;
 }
 header .menu > ul {
   margin-bottom: 0px;
@@ -175,6 +184,7 @@ header .menu-items {
     background: #2a353e;
     text-align: left;
     width: 150px;
+    z-index: 2;
   }
   header .menu-items .sub1-menu-items ul li a {
     color: #e0edf0;
@@ -209,7 +219,7 @@ header .menu-items {
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 5px 20px;
   margin: 0 8px;
   border-radius: 20px;
   box-shadow: 0px 2px 2px #d4d4d4;
@@ -226,21 +236,30 @@ header .menu-items {
   background: #fff;
   text-align: center;
   border-top: 2px solid #242729;
-  padding: 30px 0;
+  padding: 24px 0;
 }
 .welcome .welcome-text {
   padding: 10px 0;
 }
+.welcome .welcome-text * {
+  font-family: "Myriad Pro", Arial, sans-serif;
+}
+@media (min-width: 768px) {
+  .welcome .welcome-text {
+    text-align: left;
+  }
+}
 .welcome .welcome-text p {
   font-size: 1.25rem;
   color: #798284;
+  margin-bottom: 0;
 }
 .welcome .welcome-text p span {
   color: #2b3842;
   font-weight: bold;
 }
 .welcome .welcome-button {
-  padding: 10px 0;
+  padding: 9px 0;
 }
 .welcome .welcome-button .btn-download {
   background: linear-gradient(#c9dd54, #89b10d);
@@ -251,6 +270,14 @@ header .menu-items {
   background: linear-gradient(#ffffff, #ececec);
   color: #727272;
   border: 1px solid #d4d4d4;
+}
+@media (min-width: 768px) {
+  .welcome .welcome-button {
+    text-align: right;
+  }
+  .welcome .welcome-button .btn:last-child {
+    margin-right: 0;
+  }
 }
 
 .slider {
@@ -263,6 +290,11 @@ header .menu-items {
   text-transform: capitalize;
   text-align: center;
 }
+@media (min-width: 992px) {
+  .slider .slider-description .title {
+    text-align: left;
+  }
+}
 .slider .slider-description h3 {
   font-size: 1.5rem;
   color: #2d495e;
@@ -270,10 +302,17 @@ header .menu-items {
 .slider .slider-description h4 {
   font-size: 1.125rem;
   color: #75a6cb;
+  padding-bottom: 10px;
 }
 .slider .slider-description-content {
-  font-family: Arial, sans-serif;
   font-size: 0.8125rem;
+}
+.slider .slider-description-content * {
+  font-family: Arial, sans-serif;
+}
+.slider .slider-description-content a {
+  color: #3a6585;
+  text-decoration: underline;
 }
 .slider .slider-description-content ul {
   font-weight: bold;
@@ -284,6 +323,15 @@ header .menu-items {
 }
 .slider .slider-description .slider-button {
   text-align: center;
+  padding-top: 20px;
+}
+@media (min-width: 992px) {
+  .slider .slider-description .slider-button {
+    text-align: left;
+  }
+  .slider .slider-description .slider-button .btn:first-child {
+    margin-left: 0;
+  }
 }
 .slider .slider-description .slider-button .btn-download {
   background: linear-gradient(#c9dd54, #89b10d);
@@ -318,8 +366,8 @@ header .menu-items {
   .content_three .div-col-1-3 {
     padding-left: 0;
     padding-right: 0;
-    margin-left: -25px;
-    margin-right: -25px;
+    margin-left: -15px;
+    margin-right: -20px;
   }
 }
 .content_three .col-1-3 {
@@ -363,8 +411,9 @@ header .menu-items {
 }
 .content_three_child .description p {
   line-height: 1.5;
-  font-family: Arial, sans-serif;
   font-size: 0.75rem;
+  margin-bottom: 0;
+  color: #636d75;
 }
 
 .about_company {
@@ -378,7 +427,11 @@ header .menu-items {
   font-size: 1.5rem;
   text-align: center;
   color: #294356;
-  font-family: "Myriad Pro", Arial, sans-serif;
+}
+@media (min-width: 992px) {
+  .about_company h3 {
+    text-align: left;
+  }
 }
 .about_company .about_us h3 {
   font-weight: bold;
@@ -390,12 +443,25 @@ header .menu-items {
   padding-bottom: 0.75rem;
   line-height: 1.5;
 }
+.about_company .about_us .about2 {
+  text-indent: 30px;
+}
 .about_company .about_us .about_more {
   text-align: center;
+  padding: 10px 0 0;
+}
+@media (min-width: 992px) {
+  .about_company .about_us .about_more {
+    text-align: left;
+    padding-bottom: 5px;
+  }
+  .about_company .about_us .about_more .btn {
+    margin-left: 0;
+  }
 }
 .about_company .about_us .about_more .btn-learn1 {
   background: linear-gradient(#f9fdff, #f6fafa);
-  color: #727272;
+  color: #5e839f;
   border: 1px solid #d4d4d4;
 }
 .about_company .features h3 {
@@ -411,6 +477,12 @@ header .menu-items {
   font-family: "Myriad Pro", Arial, sans-serif;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .about_company .feature h4 {
+    text-align: left;
+    margin: 0 0 10px -10px;
+  }
+}
 .about_company .feature .feature_img {
   position: absolute;
   left: 0;
@@ -425,6 +497,11 @@ header .menu-items {
   min-height: 44px;
   line-height: 1.5;
 }
+@media (min-width: 768px) {
+  .about_company .feature {
+    padding-bottom: 30px;
+  }
+}
 
 footer {
   text-align: center;
@@ -435,6 +512,9 @@ footer {
   footer {
     text-align: left;
   }
+}
+footer .footer_p1 {
+  border-bottom: 1px solid #151b20;
 }
 footer .footer_p1 h3 {
   color: #e3f7ff;
@@ -454,9 +534,30 @@ footer .footer_p1 ul li .social li a {
   display: inline-block;
   padding: 10px 5px;
 }
+footer .footer_p1 ul li .social li a:first-child {
+  padding-left: 0;
+}
 footer .footer_p1 ul li .social li a img {
   height: 23px;
   width: 23px;
+}
+@media (min-width: 768px) {
+  footer .footer_p1 ul li .social li a {
+    padding-top: 20px;
+  }
+}
+footer .footer_p1 .col-social {
+  position: relative;
+  padding-left: 20px;
+}
+footer .footer_p1 .col-social:before {
+  content: '';
+  height: 100%;
+  border-left: 1px solid #25323b;
+  border-right: 1px solid #384c5b;
+  position: absolute;
+  top: 25px;
+  left: -20px;
 }
 footer .footer_p2 {
   background: linear-gradient(#161c21, #161b20);
@@ -475,6 +576,11 @@ footer .footer_p2 .policy a {
 footer .footer_p2 .copyright p {
   padding: 10px 0;
   margin: 0;
+}
+@media (min-width: 768px) {
+  footer .footer_p2 .copyright p {
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

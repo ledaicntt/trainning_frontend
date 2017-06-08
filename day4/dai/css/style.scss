@@ -43,8 +43,13 @@ li {
   list-style: none;
 }
 
-p {
-  line-height: 1.5;
+* {
+  font-family: $font-family-Myriad-Pro;
+  padding: 0;
+}
+
+p, p *, strong {
+  font-family: $font-family-Arial;
 }
 
 .hidden {
@@ -61,6 +66,7 @@ header {
       line-height: px_to_rem(54);
       font-weight: 600;
       display: inline-block;
+      font-family: $font-family-Myriad-Pro;
     }
   }
 
@@ -68,7 +74,7 @@ header {
     background: #232323;
     border: none;
     padding: 5px;
-    margin: 12px 12px 0;
+    margin: 12px 5px 0;
     float: right;
 
     .icon-bar {
@@ -88,11 +94,12 @@ header {
   .menu {
     text-align: left;
     display: none;
-
     @media (min-width: 768px) {
       display: block;
     }
-
+    a {
+      font-family: $font-family-Myriad-Pro;
+    }
     > ul {
       margin-bottom: 0px;
       @media (min-width: 768px) {
@@ -173,6 +180,7 @@ header {
         background: #2a353e;
         text-align: left;
         width: 150px;
+        z-index: 2;
       }
 
       .sub1-menu-items {
@@ -209,7 +217,7 @@ header {
 
 .btn {
   //line-height: px_to_rem(14);
-  padding: 10px 20px;
+  padding: 5px 20px;
   margin: 0 8px;
   border-radius: 20px;
   box-shadow: 0px 2px 2px #d4d4d4;
@@ -227,14 +235,22 @@ header {
   background: #fff;
   text-align: center;
   border-top: 2px solid #242729;
-  padding: 30px 0;
+  padding: 24px 0;
 
   .welcome-text {
     padding: 10px 0;
+    *{
+      font-family: $font-family-Myriad-Pro;
+    }
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+
+
     p {
       font-size: px_to_rem(20);
       color: #798284;
-
+      margin-bottom: 0;
       span {
         color: #2b3842;
         font-weight: bold;
@@ -243,7 +259,7 @@ header {
   }
 
   .welcome-button {
-    padding: 10px 0;
+    padding: 9px 0;
     .btn-download {
       background: linear-gradient(#c9dd54, #89b10d);
       color: #fffffe;
@@ -260,6 +276,12 @@ header {
         @extend .btn:hover;
       }
     }
+    @media (min-width: 768px) {
+      text-align: right;
+      .btn:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -273,6 +295,9 @@ header {
       font-weight: bold;
       text-transform: capitalize;
       text-align: center;
+      @media (min-width: 992px) {
+        text-align: left;
+      }
     }
     h3 {
       font-size: px_to_rem(24);
@@ -281,11 +306,17 @@ header {
     h4 {
       font-size: px_to_rem(18);
       color: #75a6cb;
+      padding-bottom: 10px;
     }
     &-content {
-      font-family: $font-family-Arial;
+      * {
+        font-family: $font-family-Arial;
+      }
       font-size: px_to_rem(13);
-
+      a{
+        color: #3a6585;
+        text-decoration: underline;
+      }
       ul {
         font-weight: bold;
         line-height: 1.5;
@@ -297,6 +328,13 @@ header {
 
     .slider-button {
       text-align: center;
+      padding-top: 20px;
+      @media (min-width: 992px) {
+        text-align: left;
+        .btn:first-child {
+          margin-left: 0;
+        }
+      }
       .btn-download {
         background: linear-gradient(#c9dd54, #89b10d);
         color: #fffffe;
@@ -314,7 +352,6 @@ header {
         }
       }
     }
-
   }
 
   .slider-img {
@@ -339,8 +376,8 @@ header {
     @media (min-width: 768px) {
       padding-left: 0;
       padding-right: 0;
-      margin-left: -25px;
-      margin-right: -25px;
+      margin-left: -15px;
+      margin-right: -20px;
     }
   }
 
@@ -386,8 +423,9 @@ header {
 
       p {
         line-height: 1.5;
-        font-family: $font-family-Arial;
         font-size: px_to_rem(12);
+        margin-bottom: 0;
+        color: #636d75;
       }
     }
   }
@@ -404,7 +442,9 @@ header {
     font-size: 1.5rem;
     text-align: center;
     color: #294356;
-    font-family: $font-family-Myriad-Pro;
+    @media (min-width: 992px) {
+      text-align: left;
+    }
   }
   .about_us {
     h3 {
@@ -421,13 +461,22 @@ header {
 
     .about2 {
       @extend .about1;
+      text-indent: 30px;
     }
 
     .about_more {
       text-align: center;
+      padding: 10px 0 0;
+      @media (min-width: 992px) {
+        text-align: left;
+        padding-bottom: 5px;
+        .btn {
+          margin-left: 0;
+        }
+      }
       .btn-learn1 {
         background: linear-gradient(#f9fdff, #f6fafa);
-        color: #727272;
+        color: #5e839f;
         border: 1px solid #d4d4d4;
       }
     }
@@ -445,6 +494,10 @@ header {
       color: #395c77;
       font-family: $font-family-Myriad-Pro;
       font-weight: 600;
+      @media (min-width: 768px) {
+        text-align: left;
+        margin: 0 0 10px -10px;
+      }
     }
 
     .feature_img {
@@ -462,6 +515,10 @@ header {
       min-height: 44px;
       line-height: 1.5;
     }
+
+    @media (min-width: 768px) {
+      padding-bottom: 30px;
+    }
   }
 }
 
@@ -474,6 +531,7 @@ footer {
   border-bottom: 1px solid #151b20;
 
   .footer_p1 {
+    border-bottom: 1px solid #151b20;
     h3 {
       color: #e3f7ff;
       font-weight: 600;
@@ -492,15 +550,35 @@ footer {
           a {
             display: inline-block;
             padding: 10px 5px;
+            &:first-child {
+              padding-left: 0;
+            }
             img {
               height: 23px;
               width: 23px;
+            }
+            @media (min-width: 768px) {
+              padding-top: 20px;
             }
           }
         }
       }
     }
 
+    .col-social {
+      position: relative;
+      padding-left: 20px;
+      &:before {
+        content: '';
+        height: 100%;
+        border-left: 1px solid #25323b;
+        border-right: 1px solid #384c5b;
+        position: absolute;
+        top: 25px;
+        left: -20px;
+
+      }
+    }
   }
 
   .footer_p2 {
@@ -519,10 +597,13 @@ footer {
         display: inline-block;
       }
     }
-    .copyright{
-      p{
+    .copyright {
+      p {
         padding: 10px 0;
         margin: 0;
+        @media (min-width: 768px) {
+          text-align: right;
+        }
       }
     }
   }
