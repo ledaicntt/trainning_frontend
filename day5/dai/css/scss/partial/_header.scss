@@ -1,0 +1,22 @@
+.bpm-header{
+  background-color: $header-bg;
+
+  &-logo{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  &-userinfo{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    @include media-breakpoint-up(md) {
+      text-align: right;
+      padding: 10px 0;
+    }
+  }
+}
