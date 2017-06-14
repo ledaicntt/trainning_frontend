@@ -16,7 +16,22 @@
     padding-bottom: 10px;
     @include media-breakpoint-up(md) {
       text-align: right;
-      padding: 10px 0;
+      padding: 21px 0;
     }
+    &-link{
+      display: inline-block;
+      height: 25px;
+    }
+    &-name{
+      line-height: 25px;
+      color: #fff;
+    }
+    &-avatar{
+      vertical-align: top;
+    }
+  }
+
+  &-btnsearch{
+    padding-right: 20px;
   }
 }

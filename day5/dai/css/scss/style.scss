@@ -1,7 +1,16 @@
 @import "variables";
 @import "my-variable";
+@import "my-function";
+@import "my-mixin";
 
 @import "mixin/breakpoints";
 
-
+@import "common";
 @import "partial/header";
+@import "partial/navbar";
+@import "partial/slidebar";
+
+.container{
+  border-left: 1px solid #f00;
+  border-right: 1px solid #f00;
+}

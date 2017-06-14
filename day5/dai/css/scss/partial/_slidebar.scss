@@ -1,0 +1,13 @@
+.bpm-slidebar{
+  &-tab-content{
+    &-search{
+      position: relative;
+      &-btn{
+        position: absolute;
+        right: 10px;
+        top:0;
+      }
+    }
+
+  }
+}

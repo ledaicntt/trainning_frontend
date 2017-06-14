@@ -1,0 +1,47 @@
+.bpm-breadcrumb{
+  padding: 10px 0;
+  &-parent{
+    color: #666;
+
+    &-icon{
+      padding: 0 10px;
+    }
+    &-is-active{
+      color: #000;
+    }
+  }
+
+  &-title{
+    color: $default_color_highlight;
+    @include font-size(20);
+  }
+}
+
+.bpm-playingmenu{
+  vertical-align: middle;
+  padding: 10px 0;
+  @include media-breakpoint-up(md){
+    text-align: right;
+  }
+
+  &-item{
+    display: inline-block;
+    padding: 0 5px;
+    .item-icon{
+      padding-right: 5px;
+    }
+    @include media-breakpoint-up(md){
+      padding: 0 10px;
+    }
+  }
+
+  &-showmore{
+    display: none;
+    @include media-breakpoint-up(md){
+      display: inline-block;
+      padding-left: 10px;
+    }
+  }
+
+
+}
