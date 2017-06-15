@@ -1,6 +1,16 @@
 .item-icon {
   color: #7b7878; }
 
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.bpm-main {
+  background-color: #f7f7f7;
+  padding: 20px 0; }
+
 .bpm-header {
   background-color: #231f1f; }
   .bpm-header-logo {
@@ -62,12 +72,60 @@
         display: inline-block;
         padding-left: 10px; } }
 
-.bpm-slidebar-tab-content-search {
-  position: relative; }
-  .bpm-slidebar-tab-content-search-btn {
-    position: absolute;
-    right: 10px;
-    top: 0; }
+.bpm-slidebar .nav-item a {
+  color: #666;
+  font-size: 1.13333rem;
+  line-height: 45px;
+  background-color: #fbfbfb;
+  color: #ccc;
+  padding: 0 15px;
+  width: 110px; }
+.bpm-slidebar .nav-item a.active {
+  background-color: #f7f7f7;
+  color: #666;
+  border: none; }
+  .bpm-slidebar .nav-item a.active:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #db0303;
+    border-bottom: 2px solid #db0303; }
+.bpm-slidebar-tab-content {
+  border-radius: 5px;
+  background: #fff;
+  border: none; }
+  .bpm-slidebar-tab-content-padding {
+    padding: 20px; }
+  .bpm-slidebar-tab-content-search {
+    position: relative;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px; }
+    .bpm-slidebar-tab-content-search-input {
+      width: 100%;
+      line-height: 40px;
+      height: 40px;
+      color: #999;
+      padding: 12px; }
+    .bpm-slidebar-tab-content-search-btn {
+      position: absolute;
+      right: 32px;
+      top: 32px;
+      color: #eaeaea; }
+  .bpm-slidebar-tab-content-chapters {
+    padding: 0 20px 20px 20px; }
+    .bpm-slidebar-tab-content-chapters .bpm-slidebar-chapter-title {
+      padding-left: 20px;
+      padding-top: 15px;
+      font-size: 1.13333rem;
+      color: #333;
+      position: relative; }
+      .bpm-slidebar-tab-content-chapters .bpm-slidebar-chapter-title:before {
+        content: '>';
+        padding-right: 12px;
+        color: #ccc;
+        position: absolute;
+        left: 0; }
+    .bpm-slidebar-tab-content-chapters .bpm-slidebar-chapter-videos {
+      padding-left: 20px; }
 
 .container {
   border-left: 1px solid #f00;

@@ -1,3 +1,15 @@
 .item-icon{
-  color: $default_color_item_icon;
+  color: $default-color_item-icon;
+}
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.bpm-main{
+  background-color: $bpm-main-bg;
+  padding: 20px 0;
 }
