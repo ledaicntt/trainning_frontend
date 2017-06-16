@@ -1,6 +1,6 @@
 .bpm-slidebar {
 
-  .nav-tabs{
+  .nav-tabs {
     border: none;
   }
 
@@ -16,7 +16,7 @@
     }
     a.active {
       background-color: $bpm-main-bg;
-      color: #666;
+      color: $bpm-text-color-666;
       border: none;
       &:before {
         content: '';
@@ -44,7 +44,7 @@
         width: 100%;
         line-height: 40px;
         height: 40px;
-        color: #999;
+        color: $bpm-text-color-999;
         padding: 12px;
       }
       &-btn {
@@ -78,21 +78,36 @@
           padding: 10px 40px;
           position: relative;
 
+          &:hover {
+            background: $bpm-color-highlight;
+            cursor: pointer;
+            .bpm-slidebar-chapter-video-title {
+              color: #fff;
+            }
+            .bpm-slidebar-chapter-video-time {
+              color: #ff6666;
+            }
+            &:before {
+              content: '';
+            }
+          }
+
           &-title {
-            color: #666;
+            color: $bpm-text-color-666;
           }
           &-time {
-            color: #999;
+            color: $bpm-text-color-999;
             font-weight: 300;
           }
-          &-watch{
+          &-watch {
             position: absolute;
             top: 10px;
             right: 20px;
             line-height: 1.5;
+            color: #b4b4b4;
           }
 
-          &:before{
+          &:before {
             content: url('../images/icon_02.png');
             position: absolute;
             left: 20px;
@@ -107,6 +122,9 @@
             }
             .bpm-slidebar-chapter-video-time {
               color: #ff6666;
+            }
+            &:before {
+              content: '';
             }
           }
           span, i {

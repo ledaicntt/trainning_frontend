@@ -1,0 +1,154 @@
+.bpm-main-content {
+  &-play {
+    position: relative;
+    height: 100%;
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+    &-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 99;
+      transform: translate(-50%, -50%);
+      max-height: 30%;
+      max-width: 30%;
+    }
+  }
+
+  &-tab {
+    margin: 5px 0;
+    background: #fff;
+    @include media-breakpoint-up(md) {
+      padding: 5px 0;
+    }
+
+    .bpm-tab-padding {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &-list {
+      padding-top: 5px;
+      flex-direction: column;
+      border-bottom: 1px solid #e5e5e5;
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+      }
+      .nav-item {
+        @include media-breakpoint-up(md) {
+          padding-left: 20px;
+        }
+        .nav-link {
+          @include font-size(17);
+          padding: 15px 20px;
+          @include media-breakpoint-up(md) {
+            padding: 15px 0;
+          }
+          border: none;
+          display: block;
+          height: 100%;
+          position: relative;
+          color: $bpm-text-color-999;
+          &.active {
+            color: $bpm-text-color-666;
+            &:after {
+              content: '';
+              display: block;
+              width: 100%;
+              border: 1px solid $bpm-color-highlight;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &-content {
+      .bpm-overview-author {
+        @extend .bpm-tab-padding;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e5e5e5;
+        @include media-breakpoint-up(md) {
+          padding-top: 30px;
+          padding-bottom: 30px;
+
+        }
+        .bpm-avatar {
+          border-radius: 50%;
+        }
+
+        .bpm-entry {
+          display: flex;
+
+          &-title {
+            width: 120px;
+            color: $bpm-text-color-999;
+          }
+          &-info{
+            color: $bpm-text-color-666;
+          }
+
+          .fa {
+            width: 25px;
+            color: #000;
+          }
+        }
+      }
+
+      .bpm-overview-description {
+        padding: 20px;
+        p{
+          color: $bpm-text-color-666;
+          font-weight: 300;
+        }
+        &-btn {
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+  &-tag {
+    background: #fff;
+    padding: 20px 20px 0 20px;
+
+    .bpm-tag-group {
+      padding-bottom: 20px;
+
+      .bpm-tag {
+        &-title {
+          @include font-size(17);
+          color: $bpm-text-color-666;
+        }
+        &-words{
+          .bpm-tag{
+            display: inline-block;
+            padding: 3px 10px 5px;
+            border-radius: 20px;
+            background: #f2f2f2;
+            color: #000;
+            margin-top: 10px;
+            @include font-size(13);
+
+            &.active{
+              background: $bpm-color-highlight;
+              color: #fff;
+            }
+            &:hover{
+              background: $bpm-color-highlight;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

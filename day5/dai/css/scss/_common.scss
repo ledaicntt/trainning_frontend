@@ -13,3 +13,14 @@ li{
   background-color: $bpm-main-bg;
   padding: 20px 0;
 }
+
+.bpm-btn {
+  padding: 3px 25px 5px;
+  border-radius: 25px;
+}
+
+.bpm-btn-default{
+  border: 3px solid #dbdbdb;
+  background: #fff;
+  color: $bpm-text-color-999;
+}
