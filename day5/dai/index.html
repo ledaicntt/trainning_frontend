@@ -39,7 +39,7 @@
     <nav>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 pull-left">
+                <div class="col-12 col-md-6">
                     <div class="bpm-breadcrumb">
                         <div class="bpm-breadcrumb-parent">
                             <span class="bpm-breadcrumb-parent-root">Lorem ipsum</span>
@@ -51,22 +51,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 pull-right">
+                <div class="col-12 col-md-6">
                     <div class="bpm-playingmenu">
-                        <div class="bpm-playingmenu-item">
-                            <span class="item-icon"><i class="fa fa-address-book-o"></i> </span>
-                            <span class="item-text">Layout</span>
-                        </div>
-                        <div class="bpm-playingmenu-item">
-                            <span class="item-icon"><i class="fa fa-plus-square-o"></i> </span>
-                            <span class="item-text">Add to Playlist</span>
-                        </div>
-                        <div class="bpm-playingmenu-item">
-                            <span class="item-icon"><i class="fa fa-share-square-o"></i> </span>
-                            <span class="item-text">Share</span>
-                        </div>
-                        <div class="bpm-playingmenu-showmore ">
-                            ...
+                        <div class="bpm-playingmenu-items">
+                            <div class="bpm-playingmenu-item">
+                                <span class="item-icon"><i class="fa fa-address-book-o"></i> </span>
+                                <a href="#" class="item-text">Layout</a>
+                            </div>
+                            <div class="bpm-playingmenu-item">
+                                <span class="item-icon"><i class="fa fa-plus-square-o"></i> </span>
+                                <a href="#" class="item-text">Add to Playlist</a>
+                            </div>
+                            <div class="bpm-playingmenu-item">
+                                <span class="item-icon"><i class="fa fa-share-square-o"></i> </span>
+                                <a href="#" class="item-text">Share</a>
+                            </div>
+                            <div class="bpm-playingmenu-showmore ">
+                                <a href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,20 +100,18 @@
                                         <div role="tabpanel" class="tab-pane active" id="sliderbar_content">
                                             <div class="bpm-slidebar-tab-content-search">
                                                 <input type="text" class="bpm-slidebar-tab-content-search-input form-control"
-                                                    placeholder="Search This Course"/>
+                                                       placeholder="Search This Course"/>
                                                 <i class="fa fa-search bpm-slidebar-tab-content-search-btn"></i>
                                             </div>
+                                            <div class="bpm-slidebar-tab-content-chapter">
+                                                <h4 class="bpm-slidebar-chapter-title">Lorem Ipsum is simply</h4>
+                                                <div class="bpm-slidebar-chapter-video active">
+                                                    <span class="bpm-slidebar-chapter-video-title">It was popularised</span>
+                                                    <span class="bpm-slidebar-chapter-video-time">1m 20s</span>
+                                                    <i class="fa fa-eye bpm-slidebar-chapter-video-watch"></i>
+                                                </div>
+                                            </div>
                                             <ul class="bpm-slidebar-tab-content-chapters">
-                                                <li class="bpm-slidebar-tab-content-chapter">
-                                                    <h4 class="bpm-slidebar-chapter-title">Lorem Ipsum is simply</h4>
-                                                    <ul class="bpm-slidebar-chapter-videos">
-                                                        <li class="bpm-slidebar-chapter-video active">
-                                                            <span class="bpm-slidebar-chapter-video-title">It was popularised</span>
-                                                            <span class="bpm-slidebar-chapter-video-time">1m 20s</span>
-                                                            <i class="fa fa-eye bpm-slidebar-chapter-video-watch"></i>
-                                                        </li>
-                                                    </ul>
-                                                </li>
                                                 <li class="bpm-slidebar-tab-content-chapter">
                                                     <h4 class="bpm-slidebar-chapter-title">01. Richard McClintock</h4>
                                                     <ul class="bpm-slidebar-chapter-videos">
@@ -176,6 +180,47 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="bpm-slidebar-chatbox">
+                                    <div class="bpm-chatbox-header">
+                                        <img src="images/chatbox.png" alt="">
+                                        <h4>Virtual Assistant</h4>
+                                    </div>
+
+                                    <div class="bpm-chatbox-content">
+                                        <div class="bpm-chatbox-show">
+                                            <p class="bpm-chatter">
+                                                <span class="bpm-chat-name">VA:</span>
+                                                <span class="bpm-chat-text">Hi, How can I Help you?</span>
+                                            </p>
+                                            <p class="bpm-chattme">
+                                                <span class="bpm-chat-name">Son:</span>
+                                                <span class="bpm-chat-text">Lorem ipsum dolor sit amet</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="bpm-chatbox-type">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Type your message">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-secondary" type="button">Send</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="bpm-slidebar-feedback">
+                                    <div class="bpm-slidebar-feedback-img">
+                                        <img src="images/feedback.png" alt="feedback">
+                                    </div>
+                                    <div class="bpm-slidebar-feedback-text">
+                                        <h4>Course Feedback</h4>
+                                        <p>Help us make your experience better</p>
+                                    </div>
+                                </div>
                             </div>
                         </aside>
                 </div>
@@ -209,7 +254,7 @@
                                                 <div class="col-12 col-md-auto">
                                                     <img src="images/author_avatar.jpg" alt="avatar" class="bpm-avatar">
                                                 </div>
-                                                <div class="col-12 col-md">
+                                                <div class="col-12 col-md author_1">
                                                     <div class="bpm-entry">
                                                         <div class="bpm-entry-title">
                                                             Author
@@ -307,6 +352,94 @@
             </div>
         </div>
     </section>
+    <footer class="bpm-footer">
+        <div class="bpm-footer-logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-12 ">
+                        <div class="bpm-footer-logo-left">
+                            <img src="images/logo_1.png">
+                            <img src="images/logo_2.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class="bpm-footer-logo-right">
+                            <p>Membership at BPMInstitute.org includes access to our other communities</p>
+                            <img src="images/logo_3.png">
+                            <img src="images/logo_4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bpm-footer-ref">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="bpm-footer-widget">
+                                    <h4>About Us</h4>
+                                    <ul class="bpm-widget-ul">
+                                        <li><a href="#">About Us </a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Press Center</a></li>
+                                        <li><a href="#">Become an Instructor</a></li>
+                                        <li><a href="#">Video2Brain</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bpm-footer-widget">
+                                    <h4>Products</h4>
+                                    <ul class="bpm-widget-ul">
+                                        <li><a href="#">About Us </a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Press Center</a></li>
+                                        <li><a href="#">Become an Instructor</a></li>
+                                        <li><a href="#">Video2Brain</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bpm-footer-widget">
+                                    <h4>Support</h4>
+                                    <ul class="bpm-widget-ul">
+                                        <li><a href="#">About Us </a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Press Center</a></li>
+                                        <li><a href="#">Become an Instructor</a></li>
+                                        <li><a href="#">Video2Brain</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-6 push-md-6">
+                                <div class="bpm-footer-widget">
+                                    <h4>Follow Us on</h4>
+                                    <ul class="bpm-widget-socials">
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="images/follow_1.png" alt=""></a></li>
 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

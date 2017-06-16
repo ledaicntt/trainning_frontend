@@ -5,8 +5,11 @@
 
 @import "mixin/breakpoints";
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700');
+
 @import "common";
 @import "partial/header";
 @import "partial/navbar";
 @import "partial/slidebar";
 @import "partial/content";
+@import "partial/footer";
