@@ -1,10 +1,20 @@
 html{
   font-size: $bpm-html-font-size;
+}
+
+body{
   font-family: $bpm-font-family;
 }
 
 .item-icon{
   color: $default-color_item-icon;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
 }
 ul{
   padding: 0;

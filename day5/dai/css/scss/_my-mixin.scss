@@ -1,3 +1,17 @@
-@mixin font-size($size_px){
+@mixin font-size($size_px) {
   font-size: ($size_px / ($bpm-html-font-size/1px))+rem;
+}
+
+@mixin bpm-hover-highlight {
+  &:hover {
+    text-decoration: none;
+    color: $bpm-color-highlight;
+  }
+}
+
+@mixin bpm-a-hover-highlight {
+  a:hover {
+    text-decoration: none;
+    color: $bpm-color-highlight;
+  }
 }

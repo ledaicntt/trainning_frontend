@@ -1,14 +1,23 @@
 .bpm-breadcrumb{
   padding: 10px 0;
   &-parent{
+
     color: $bpm-text-color-666;
+
+    &-root{
+      color: $bpm-text-color-666;
+      @include bpm-hover-highlight;
+    }
 
     &-icon{
       padding: 0 10px;
     }
+
     &-is-active{
       color: #000;
+      @include bpm-hover-highlight();
     }
+
   }
 
   &-title{
