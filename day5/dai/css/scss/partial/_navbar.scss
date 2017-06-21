@@ -1,72 +1,116 @@
-.bpm-breadcrumb{
+.bpm-breadcrumb {
   padding: 10px 0;
-  &-parent{
+  &-parent {
 
     color: $bpm-text-color-666;
 
-    &-root{
+    &-root {
       color: $bpm-text-color-666;
       @include bpm-hover-highlight;
     }
 
-    &-icon{
+    &-icon {
       padding: 0 10px;
     }
 
-    &-is-active{
+    &-is-active {
       color: #000;
       @include bpm-hover-highlight();
     }
 
   }
 
-  &-title{
+  &-title {
     color: $bpm-color-highlight;
     @include font-size(20);
   }
 }
 
-.bpm-playingmenu{
+.bpm-playingmenu {
   color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     text-align: right;
   }
 
-  &-item{
+  &-item {
     display: inline-block;
     padding: 0 5px;
-    .item-icon{
+    .item-icon {
       padding-right: 5px;
     }
-    .item-text{
+    .item-text {
       color: #000;
-      &:hover{
+      &:hover {
         color: $bpm-color-highlight;
         text-decoration: none;
       }
     }
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(md) {
       padding: 0 10px;
     }
   }
 
-  &-showmore{
-    display: none;
+  &-showmore {
+    //display: none;
+    display: inline-block;
+    padding-left: 10px;
+    width: 100%;
     @include media-breakpoint-up(md){
+      width: auto;
+    }
+    span {
       display: inline-block;
-      padding-left: 10px;
-      span{
+      border: 2px solid #000;
+      border-radius: 50%;
+    }
+
+    .dropdown-toggle {
+      &:after {
+        display: none;
+      }
+    }
+
+    .dropdown-menu {
+      position: relative;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      width: 100%;
+
+      li {
         display: inline-block;
-        border: 2px solid #000;
-        border-radius: 50%;
+        padding: 5px;
+        border-top: none;
+        text-align: right;
+
+        a {
+          color: #000;
+          &:hover {
+            color: $bpm-color-highlight;
+          }
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        position: absolute;
+        left: auto;
+        right: 0;
+
+        li{
+          border: 1px solid #ccc;
+          display: block;
+          &:first-child {
+            border-top: 1px solid #ccc;
+          }
+
+        }
       }
     }
   }
-
 
 }

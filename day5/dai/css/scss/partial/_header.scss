@@ -1,7 +1,7 @@
-.bpm-header{
+.bpm-header {
   background-color: $bpm-header-bg;
 
-  &-logo{
+  &-logo {
     display: block;
     text-align: center;
     padding: 10px 0;
@@ -10,28 +10,101 @@
     }
   }
 
-  &-userinfo{
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
+  &-userinfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
     @include media-breakpoint-up(md) {
-      text-align: right;
-      padding: 21px 0;
+      justify-content: flex-end;
+      padding: 0;
     }
-    &-link{
+
+    i.fa {
+      cursor: pointer;
+    }
+    &-link {
       display: inline-block;
       height: 25px;
     }
-    &-name{
+    &-name {
       line-height: 25px;
       color: #fff;
     }
-    &-avatar{
+    &-avatar {
       vertical-align: top;
     }
   }
 
-  &-btnsearch{
+  &-btnsearch {
     padding-right: 20px;
+  }
+
+  .bpm-search-form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      margin-right: 20px;
+      width: auto;
+    }
+    &-t {
+      display: inline-block;
+    }
+
+    i.fa {
+      color: $bpm-text-color-666;
+      top: 10px;
+    }
+    &-s {
+      position: absolute;
+      right: 10px;
+    }
+
+    &-c {
+      position: absolute;
+      right: 30px;
+    }
+  }
+
+  .bpm-usermenu {
+    width: 100%;
+
+    @include media-breakpoint-up(md){
+      width: auto;
+      position: absolute;
+      z-index: 99;
+      right: 0;
+      top: 100%;
+      background: #231f1f;
+    }
+
+
+    .bpm-usermenu-ls {
+      margin: 0;
+      li{
+        border-bottom: 1px solid $bpm-text-color-666;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+    .bpm-usermenu-l {
+      display: block;
+      color: #fff;
+      font-weight: 300;
+      padding: 5px 0;
+      &:hover {
+        color: $bpm-color-highlight;
+      }
+      @include media-breakpoint-up(md){
+        padding: 5px 5px 5px 15px;
+        text-align: right;
+      }
+    }
   }
 }

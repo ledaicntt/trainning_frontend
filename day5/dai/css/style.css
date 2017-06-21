@@ -42,13 +42,19 @@ li {
       .bpm-header-logo {
         text-align: left; } }
   .bpm-header-userinfo {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px; }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    position: relative; }
     @media (min-width: 768px) {
       .bpm-header-userinfo {
-        text-align: right;
-        padding: 21px 0; } }
+        justify-content: flex-end;
+        padding: 0; } }
+    .bpm-header-userinfo i.fa {
+      cursor: pointer; }
     .bpm-header-userinfo-link {
       display: inline-block;
       height: 25px; }
@@ -59,6 +65,53 @@ li {
       vertical-align: top; }
   .bpm-header-btnsearch {
     padding-right: 20px; }
+  .bpm-header .bpm-search-form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .bpm-header .bpm-search-form {
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: auto; } }
+    .bpm-header .bpm-search-form-t {
+      display: inline-block; }
+    .bpm-header .bpm-search-form i.fa {
+      color: #666;
+      top: 10px; }
+    .bpm-header .bpm-search-form-s {
+      position: absolute;
+      right: 10px; }
+    .bpm-header .bpm-search-form-c {
+      position: absolute;
+      right: 30px; }
+  .bpm-header .bpm-usermenu {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .bpm-header .bpm-usermenu {
+        width: auto;
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 100%;
+        background: #231f1f; } }
+    .bpm-header .bpm-usermenu .bpm-usermenu-ls {
+      margin: 0; }
+      .bpm-header .bpm-usermenu .bpm-usermenu-ls li {
+        border-bottom: 1px solid #666; }
+        .bpm-header .bpm-usermenu .bpm-usermenu-ls li:last-child {
+          border-bottom: none; }
+    .bpm-header .bpm-usermenu .bpm-usermenu-l {
+      display: block;
+      color: #fff;
+      font-weight: 300;
+      padding: 5px 0; }
+      .bpm-header .bpm-usermenu .bpm-usermenu-l:hover {
+        color: #db0303; }
+      @media (min-width: 768px) {
+        .bpm-header .bpm-usermenu .bpm-usermenu-l {
+          padding: 5px 5px 5px 15px;
+          text-align: right; } }
 
 .bpm-breadcrumb {
   padding: 10px 0; }
@@ -103,15 +156,43 @@ li {
       .bpm-playingmenu-item {
         padding: 0 10px; } }
   .bpm-playingmenu-showmore {
-    display: none; }
+    display: inline-block;
+    padding-left: 10px;
+    width: 100%; }
     @media (min-width: 768px) {
       .bpm-playingmenu-showmore {
+        width: auto; } }
+    .bpm-playingmenu-showmore span {
+      display: inline-block;
+      border: 2px solid #000;
+      border-radius: 50%; }
+    .bpm-playingmenu-showmore .dropdown-toggle:after {
+      display: none; }
+    .bpm-playingmenu-showmore .dropdown-menu {
+      position: relative;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      width: 100%; }
+      .bpm-playingmenu-showmore .dropdown-menu li {
         display: inline-block;
-        padding-left: 10px; }
-        .bpm-playingmenu-showmore span {
-          display: inline-block;
-          border: 2px solid #000;
-          border-radius: 50%; } }
+        padding: 5px;
+        border-top: none;
+        text-align: right; }
+        .bpm-playingmenu-showmore .dropdown-menu li a {
+          color: #000; }
+          .bpm-playingmenu-showmore .dropdown-menu li a:hover {
+            color: #db0303; }
+      @media (min-width: 768px) {
+        .bpm-playingmenu-showmore .dropdown-menu {
+          position: absolute;
+          left: auto;
+          right: 0; }
+          .bpm-playingmenu-showmore .dropdown-menu li {
+            border: 1px solid #ccc;
+            display: block; }
+            .bpm-playingmenu-showmore .dropdown-menu li:first-child {
+              border-top: 1px solid #ccc; } }
 
 .bpm-slidebar .nav-tabs {
   border: none; }
@@ -124,7 +205,6 @@ li {
   width: 110px;
   border: none; }
 .bpm-slidebar .nav-item a.active {
-  background-color: #f7f7f7;
   color: #666;
   border: none; }
   .bpm-slidebar .nav-item a.active:before {
@@ -232,13 +312,8 @@ li {
     height: 230px;
     overflow: hidden;
     border: 1px solid #e5e5e5;
-    padding: 15px; }
-    .bpm-chatbox-content .bpm-chatbox-show .bpm-chat-name {
-      font-weight: bold; }
-    .bpm-chatbox-content .bpm-chatbox-show .bpm-chattme .bpm-chat-name {
-      color: #db0303; }
-    .bpm-chatbox-content .bpm-chatbox-show .bpm-chattme .bpm-chat-text {
-      color: #a3a3a3; }
+    padding: 15px;
+    overflow: overlay; }
   .bpm-chatbox-content .bpm-chatbox-type {
     margin-top: 15px; }
     .bpm-chatbox-content .bpm-chatbox-type .form-control {
@@ -271,6 +346,14 @@ li {
       font-size: 1.33333rem; }
     .bpm-slidebar-feedback-text p {
       font-weight: 300; }
+
+.bpm-chat-name {
+  font-weight: bold; }
+
+.bpm-chattme .bpm-chat-name {
+  color: #db0303; }
+.bpm-chattme .bpm-chat-text {
+  color: #a3a3a3; }
 
 .bpm-main-content {
   margin-top: -20px; }
@@ -450,5 +533,62 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 10px 0; } }
+
+.bpm-onlchat {
+  width: 200px;
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+  .bpm-onlchat-header {
+    padding: 5px 10px;
+    background: #db0303;
+    color: #fff;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+    .bpm-onlchat-header i.fa {
+      line-height: 1.5; }
+    .bpm-onlchat-header img {
+      height: 20px;
+      width: 20px; }
+  .bpm-onlchat-list {
+    padding: 10px 0 10px 10px;
+    background: #e9ebee; }
+    .bpm-onlchat-list-s {
+      height: 250px;
+      overflow: overlay;
+      margin: 0; }
+    .bpm-onlchat-list-search {
+      padding: 10px 0 0;
+      border-top: 1px solid #ced1d5;
+      margin-right: 20px;
+      display: flex;
+      align-items: center; }
+    .bpm-onlchat-list .form-control {
+      border: none;
+      background: #e9ebee; }
+  .bpm-onlchat-online {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0; }
+    .bpm-onlchat-online-name {
+      color: #666;
+      cursor: pointer; }
+      .bpm-onlchat-online-name:hover {
+        color: #db0303; }
+      .bpm-onlchat-online-name img {
+        height: 30px;
+        width: 30px; }
+    .bpm-onlchat-online-time {
+      color: #ced1d5;
+      font-size: 0.8rem;
+      padding-right: 30px;
+      line-height: 30px; }
+
+.bpm-chat-pri {
+  right: 220px; }
+  .bpm-chat-pri .bpm-chatter, .bpm-chat-pri .bpm-chattme {
+    margin: 0;
+    padding-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */
